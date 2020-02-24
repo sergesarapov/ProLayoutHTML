@@ -9,6 +9,7 @@ body {
 
 a {
   text-decoration: none;
+  color: rgba(34, 34, 34, 1);
 }
 
 .center {
@@ -63,8 +64,9 @@ a {
 
 .header__form input {
   padding-left: 16px;
+  padding-right: 16px;
   height: 38px;
-  width: 317px;
+  width: 300px;
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(230, 230, 230, 1);
   border-left: none;
@@ -146,7 +148,7 @@ a {
   text-transform: uppercase;
 }
 
-/* NAVIGATION MENU */
+/* NAVIGATION MENU*************************************************************** */
 
 .menu {
   list-style-type: none;
@@ -164,7 +166,7 @@ a {
   text-transform: uppercase;
 }
 
-/* PROMO  */
+/* PROMO***********************************************************************  */
 
 .promo {
   height: 614px;
@@ -187,6 +189,8 @@ a {
   letter-spacing: 0.03em;
   border-left: 12px solid rgba(241, 109, 127, 1);
   padding-left: 12px;
+  padding-bottom: 15px;
+  line-height: 46px;
 }
 
 .promo__h2 {
@@ -197,6 +201,7 @@ a {
   letter-spacing: 0.03em;
   border-left: 12px solid rgba(241, 109, 127, 1);
   padding-left: 12px;
+  line-height: 35px;
 }
 
 .promo__h2 span {
@@ -207,7 +212,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-/* SPECIAL ACTIONS */
+/* SPECIAL ACTIONS*************************************************************** */
 
 .special__actions {
   display: flex;
@@ -234,7 +239,6 @@ a {
   position: absolute;
   top: 26px;
   height: 82px;
-
   background-color: white;
   text-align: left;
   font-size: 18px;
@@ -254,7 +258,11 @@ a {
   text-transform: uppercase;
 }
 
-/* FEATURED ITEMS */
+.special__text:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* FEATURED ITEMS************************************************************** */
 
 .featured {
   display: flex;
@@ -302,39 +310,23 @@ a {
   position: relative;
 }
 
-.featured__item__hidden {
+.add__to__cart__link:hover {
+  background-color: rgba(34, 34, 36, 0.4);
+}
+
+.featured__item:hover .add__to__cart__link {
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.featured__item:hover .featured__img {
+  filter: brightness(40%);
+}
+
+.add__to__cart__link {
   position: absolute;
-  /* background-color: rgba(34, 34, 36, 0.6); */
-  /* height: 280px; */
-  height: 465px;
-  width: 261px;
-  opacity: 0;
-}
-
-.hidden-bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  background-color: rgba(34, 34, 36, 0.6);
-  height: 280px;
-  width: 261px;
-  top: 0;
-}
-
-.hidden-bg a {
-  padding: 60px;
-}
-
-.featured__item__hidden:hover {
-  opacity: 1;
-}
-
-.add__to__cart {
-  display: flex;
+  top: 97px;
+  left: 70px;
+  display: none;
   align-items: center;
   font-size: 13px;
   font-weight: bold;
@@ -343,7 +335,7 @@ a {
   padding: 10px;
 }
 
-.add__to__cart span {
+.add__to__cart__link span {
   margin-left: 5px;
 }
 
@@ -362,6 +354,10 @@ a {
   text-transform: uppercase;
   margin-top: 19px;
   margin-left: 8px;
+}
+
+.item__name a:hover {
+  font-weight: bold;
 }
 
 .item__price {
@@ -384,7 +380,9 @@ a {
   color: rgba(255, 255, 255, 1);
   text-align: center;
   letter-spacing: 0.03em;
-  line-height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .featured__button span {
@@ -393,7 +391,6 @@ a {
   color: rgba(255, 255, 255, 1);
   text-align: center;
   letter-spacing: 0.03em;
-  line-height: 54px;
   margin-left: 9px;
 }
 
@@ -401,7 +398,7 @@ a {
   background-color: rgba(241, 109, 127, 0.6);
 }
 
-/* OFFER */
+/* OFFER*********************************************************************** */
 
 .offer {
   display: flex;
@@ -479,7 +476,7 @@ a {
   line-height: 24px;
 }
 
-/* SUBSCRIBE */
+/* SUBSCRIBE******************************************************************** */
 
 .subscribe {
   display: flex;
@@ -568,7 +565,7 @@ a {
 
 .subscribe__form input {
   height: 46px;
-  width: 310px;
+  width: 282px;
   background-color: rgba(225, 225, 225, 1);
   border-radius: 23px 0px 0px 23px;
   border: none;
@@ -577,7 +574,12 @@ a {
   letter-spacing: 0.03em;
   line-height: 54px;
   padding-left: 28px;
+  padding-right: 28px;
   outline: none;
+}
+
+.subscribe__form input:invalid {
+  background-color: rgba(241, 109, 127, 0.6);
 }
 
 .subscribe__button {
@@ -595,6 +597,8 @@ a {
 .subscribe__button:hover {
   background-color: rgba(241, 109, 127, 0.6);
 }
+
+/* FOOTER MENU******************************************************************** */
 
 .down__menu {
   display: flex;
@@ -655,7 +659,7 @@ a {
   color: rgba(137, 137, 137, 1);
 }
 
-/* FOOTER */
+/* FOOTER********************************************************************** */
 
 .footer {
   height: 79px;
