@@ -22,9 +22,25 @@
           >
         </a>
         <form class="header__form" action="#">
-          <a href=""
-            ><div class="header__browse">Browse <span></span></div></a
-          >
+          <details class="header__browse">
+            <summary class="browse__dropdown__summary">Browse</summary>
+            <div class="drop">
+              <div class="drop__flex">
+                <h3 class="drop__h3">Women</h3>
+                <ul class="drop__ul">
+                  <li><a href="#" class="drop__link">Dresses</a></li>
+                  <li><a href="#" class="drop__link">Tops</a></li>
+                  <li><a href="#" class="drop__link">Sweaters/Knits</a></li>
+                  <li><a href="#" class="drop__link">Jackets/Coats</a></li>
+                  <li><a href="#" class="drop__link">Blazers</a></li>
+                  <li><a href="#" class="drop__link">Denim</a></li>
+                  <li><a href="#" class="drop__link">Leggings/Pants</a></li>
+                  <li><a href="#" class="drop__link">Skirts/Shorts</a></li>
+                  <li><a href="#" class="drop__link">Accessories</a></li>
+                </ul>
+              </div>
+            </div>
+          </details>
           <input type="text" placeholder="Search for Item..." />
           <button></button>
         </form>
@@ -37,9 +53,41 @@
       </div>
     </header>
     <nav class="nav center">
-      <ul class="menu">
+      <ul class="menu index__menu">
         <li class="menu__list"><a class="menu__link" href="#">Home </a></li>
-        <li class="menu__list"><a class="menu__link" href="#">Man </a></li>
+        <li class="menu__list">
+          <a class="menu__link" href="catalog.html">Man </a>
+          <div class="drop">
+            <div class="drop__flex">
+              <h3 class="drop__h3">Women</h3>
+              <ul class="drop__ul">
+                <li><a href="#" class="drop__link">Dresses</a></li>
+                <li><a href="#" class="drop__link">Tops</a></li>
+                <li><a href="#" class="drop__link">Sweaters/Knits</a></li>
+                <li><a href="#" class="drop__link">Jackets/Coats</a></li>
+                <li><a href="#" class="drop__link">Blazers</a></li>
+                <li><a href="#" class="drop__link">Denim</a></li>
+                <li><a href="#" class="drop__link">Leggings/Pants</a></li>
+                <li><a href="#" class="drop__link">Skirts/Shorts</a></li>
+                <li><a href="#" class="drop__link">Accessories</a></li>
+              </ul>
+            </div>
+            <div class="drop__flex">
+              <h3 class="drop__h3">Women</h3>
+              <ul class="drop__ul">
+                <li><a href="#" class="drop__link">Dresses</a></li>
+                <li><a href="#" class="drop__link">Tops</a></li>
+                <li><a href="#" class="drop__link">Sweaters/Knits</a></li>
+              </ul>
+              <h3 class="drop__h3">Women</h3>
+              <ul class="drop__ul">
+                <li><a href="#" class="drop__link">Dresses</a></li>
+                <li><a href="#" class="drop__link">Tops</a></li>
+                <li><a href="#" class="drop__link">Sweaters/Knits</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
         <li class="menu__list"><a class="menu__link" href="#">Women </a></li>
         <li class="menu__list"><a class="menu__link" href="#">Kids </a></li>
         <li class="menu__list">
@@ -318,10 +366,11 @@
         <span class="subscribe__section__tagline"
           >FOR OUR NEWLETTER AND PROMOTION</span
         >
-        <div class="subscribe__form">
+
+        <form class="subscribe__form" action="#">
           <input type="email" placeholder="Enter Your Email" />
-          <a href=""><div class="subscribe__button">Subscribe</div></a>
-        </div>
+          <button type="submit" class="subscribe__button">Subscribe</button>
+        </form>
       </div>
     </div>
     <div class="down__menu center">
@@ -377,21 +426,11 @@
     <footer class="footer center">
       <div class="copyr">&copy;&nbsp;2020 Brand All Rights Reserved.</div>
       <div class="social__wrapper">
-        <a href="">
-          <div><img src="img/fb.png" alt="" /></div>
-        </a>
-        <a href="">
-          <div><img src="img/fb.png" alt="" /></div>
-        </a>
-        <a href="">
-          <div><img src="img/fb.png" alt="" /></div>
-        </a>
-        <a href="">
-          <div><img src="img/fb.png" alt="" /></div>
-        </a>
-        <a href="">
-          <div><img src="img/fb.png" alt="" /></div>
-        </a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
       </div>
     </footer>
   </body>
