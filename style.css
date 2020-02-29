@@ -1347,9 +1347,8 @@ details[open] > summary::after {
   height: 5px;
   width: 63px;
   background-color: rgba(239, 91, 112, 1);
-  margin-top: 13px;
   position: absolute;
-  top: 15px;
+  top: 29px;
 }
 
 .item__title {
