@@ -62,7 +62,7 @@
           <a class="menu__link" href="index.html">Home </a>
         </li>
         <li class="menu__list">
-          <a class="menu__link" href="#">Man </a>
+          <a class="menu__link" href="catalog.html">Man </a>
           <div class="drop">
             <div class="drop__flex">
               <h3 class="drop__h3">Women</h3>
@@ -113,376 +113,155 @@
         <li><a href="#">new arrivals</a></li>
       </ul>
     </div>
-    <div class="catalog center">
-      <aside class="sidebar">
-        <details class="category__group">
-          <summary>CATEGORY</summary>
-          <ul>
-            <li><a href="#">Bags</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Hoodies & Sweatshirts</a></li>
-            <li><a href="#">Bags</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Hoodies & Sweatshirts</a></li>
-            <li><a href="#">Bags</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Hoodies & Sweatshirts</a></li>
-            <li><a href="#">Bags</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Hoodies & Sweatshirts</a></li>
-          </ul>
-        </details>
-        <details class="category__group">
-          <summary>BRAND</summary>
-          <ul>
-            <li><a href="#">Bags</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Hoodies & Sweatshirts</a></li>
-          </ul>
-        </details>
-        <details class="category__group">
-          <summary>DESIGNER</summary>
-          <ul>
-            <li><a href="#">Bags</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Hoodies & Sweatshirts</a></li>
-          </ul>
-        </details>
-      </aside>
-      <section class="featured">
-        <div class="filter">
-          <div class="filter__container">
-            <section class="filter__trending">
-              <span class="filter__trending__title">TRENDING NOW</span>
-              <div class="filter__trending__wrapper">
-                <span class="filter__trending__item"
-                  ><a href="">Bohemian</a></span
-                >
-                <div class="filter__trending__item">|</div>
-                <span class="filter__trending__item"
-                  ><a href="">Florial</a></span
-                >
-                <div class="filter__trending__item">|</div>
-                <span class="filter__trending__item"><a href="">Lace</a></span>
-                <span class="filter__trending__item"
-                  ><a href="">Florial</a></span
-                >
-                <div class="filter__trending__item">|</div>
-                <span class="filter__trending__item"><a href="">Lace</a></span>
-                <div class="filter__trending__item">|</div>
-                <span class="filter__trending__item"
-                  ><a href="">Bohemian</a></span
-                >
-              </div>
-            </section>
-            <section class="filter__size">
-              <span>SIZE</span>
-              <div class="filter__size__boxes">
-                <div class="filter__size__box">
-                  <input class="checkbox" id="checkbox" type="checkbox" />
-                  <label for="checkbox">XXS</label>
-                </div>
-                <div class="filter__size__box">
-                  <input
-                    checked
-                    class="checkbox"
-                    id="checkbox0"
-                    type="checkbox"
-                  />
-                  <label for="checkbox0">XS</label>
-                </div>
-                <div class="filter__size__box">
-                  <input class="checkbox" id="checkbox1" type="checkbox" />
-                  <label for="checkbox1">S</label>
-                </div>
-                <div class="filter__size__box">
-                  <input class="checkbox" id="checkbox2" type="checkbox" />
-                  <label for="checkbox2">M</label>
-                </div>
-                <div class="filter__size__box">
-                  <input class="checkbox" id="checkbox3" type="checkbox" />
-                  <label for="checkbox3">L</label>
-                </div>
-                <div class="filter__size__box">
-                  <input class="checkbox" id="checkbox4" type="checkbox" />
-                  <label for="checkbox4">XL</label>
-                </div>
-                <div class="filter__size__box">
-                  <input class="checkbox" id="checkbox5" type="checkbox" />
-                  <label for="checkbox5">XXL</label>
-                </div>
-              </div>
-            </section>
-            <section class="filter__price">
-              <span>PRICE</span>
-              <div class="filter__price__container">
-                <form oninput="result.value = flevel.valueAsNumber">
-                  <input
-                    name="flevel"
-                    id="range"
-                    min="0"
-                    max="500"
-                    type="range"
-                    value="52"
-                    step="1"
-                  />
-                  <span>$</span
-                  ><output class="output1" name="result" for="range">52</output>
-                </form>
-                <form oninput="result.value = flevel2.valueAsNumber">
-                  <input
-                    name="flevel2"
-                    id="range1"
-                    min="500"
-                    max="1000"
-                    type="range"
-                    value="400"
-                    step="1"
-                  />
-
-                  <span class="dollar__span">$</span
-                  ><output class="output2" name="result" for="range1"
-                    >400</output
-                  >
-                </form>
-              </div>
-            </section>
-          </div>
-          <div class="filter__bottom">
-            <div class="filter__bottom__sort">Sort By</div>
-            <select name="sort" id="sort" class="filter__bottom__number">
-              <option value="Name">Name</option>
-              <option value="Price">Price</option>
-            </select>
-            <div class="filter__bottom__show">Show</div>
-            <select name="show" id="show" class="filter__bottom__number">
-              <option value="09">09</option>
-              <option value="08">08</option>
-            </select>
-          </div>
-        </div>
-        <div class="featured__items__container catalog__items__container">
-          <div class="featured__item">
-            <a class="add__to__cart__link" href="#">
-              <div class="add__to__cart">
-                <img src="img/cart-w.png" alt="" />
-                <span>Add to Cart</span>
-              </div>
-            </a>
-            <a href="">
-              <img src="img/feat-1.png" alt="" class="featured__img" />
-            </a>
-            <span class="item__name"
-              ><a class="item__name__link" href=""
-                >Mango People T-shirt</a
-              ></span
-            >
-            <span class="item__price">$52.00</span>
-            <a class="add__to__cart__link" href="#">
-              <img src="img/cart-w.png" alt="" />
-              <span>Add to Cart</span>
-            </a>
-          </div>
-          <div class="featured__item">
-            <a class="add__to__cart__link" href="#">
-              <div class="add__to__cart">
-                <img src="img/cart-w.png" alt="" />
-                <span>Add to Cart</span>
-              </div>
-            </a>
-            <a href="">
-              <img src="img/feat-1.png" alt="" class="featured__img" />
-            </a>
-            <span class="item__name"
-              ><a class="item__name__link" href=""
-                >Mango People T-shirt</a
-              ></span
-            >
-            <span class="item__price">$52.00</span>
-            <a class="add__to__cart__link" href="#">
-              <img src="img/cart-w.png" alt="" />
-              <span>Add to Cart</span>
-            </a>
-          </div>
-          <div class="featured__item">
-            <a class="add__to__cart__link" href="#">
-              <div class="add__to__cart">
-                <img src="img/cart-w.png" alt="" />
-                <span>Add to Cart</span>
-              </div>
-            </a>
-            <a href="">
-              <img src="img/feat-1.png" alt="" class="featured__img" />
-            </a>
-            <span class="item__name"
-              ><a class="item__name__link" href=""
-                >Mango People T-shirt</a
-              ></span
-            >
-            <span class="item__price">$52.00</span>
-            <a class="add__to__cart__link" href="#">
-              <img src="img/cart-w.png" alt="" />
-              <span>Add to Cart</span>
-            </a>
-          </div>
-          <div class="featured__item">
-            <a class="add__to__cart__link" href="#">
-              <div class="add__to__cart">
-                <img src="img/cart-w.png" alt="" />
-                <span>Add to Cart</span>
-              </div>
-            </a>
-            <a href="">
-              <img src="img/feat-1.png" alt="" class="featured__img" />
-            </a>
-            <span class="item__name"
-              ><a class="item__name__link" href=""
-                >Mango People T-shirt</a
-              ></span
-            >
-            <span class="item__price">$52.00</span>
-            <a class="add__to__cart__link" href="#">
-              <img src="img/cart-w.png" alt="" />
-              <span>Add to Cart</span>
-            </a>
-          </div>
-          <div class="featured__item">
-            <a class="add__to__cart__link" href="#">
-              <div class="add__to__cart">
-                <img src="img/cart-w.png" alt="" />
-                <span>Add to Cart</span>
-              </div>
-            </a>
-            <a href="">
-              <img src="img/feat-1.png" alt="" class="featured__img" />
-            </a>
-            <span class="item__name"
-              ><a class="item__name__link" href=""
-                >Mango People T-shirt</a
-              ></span
-            >
-            <span class="item__price">$52.00</span>
-            <a class="add__to__cart__link" href="#">
-              <img src="img/cart-w.png" alt="" />
-              <span>Add to Cart</span>
-            </a>
-          </div>
-          <div class="featured__item">
-            <a class="add__to__cart__link" href="#">
-              <div class="add__to__cart">
-                <img src="img/cart-w.png" alt="" />
-                <span>Add to Cart</span>
-              </div>
-            </a>
-            <a href="">
-              <img src="img/feat-1.png" alt="" class="featured__img" />
-            </a>
-            <span class="item__name"
-              ><a class="item__name__link" href=""
-                >Mango People T-shirt</a
-              ></span
-            >
-            <span class="item__price">$52.00</span>
-            <a class="add__to__cart__link" href="#">
-              <img src="img/cart-w.png" alt="" />
-              <span>Add to Cart</span>
-            </a>
-          </div>
-          <div class="featured__item">
-            <a class="add__to__cart__link" href="#">
-              <div class="add__to__cart">
-                <img src="img/cart-w.png" alt="" />
-                <span>Add to Cart</span>
-              </div>
-            </a>
-            <a href="">
-              <img src="img/feat-1.png" alt="" class="featured__img" />
-            </a>
-            <span class="item__name"
-              ><a class="item__name__link" href=""
-                >Mango People T-shirt</a
-              ></span
-            >
-            <span class="item__price">$52.00</span>
-            <a class="add__to__cart__link" href="#">
-              <img src="img/cart-w.png" alt="" />
-              <span>Add to Cart</span>
-            </a>
-          </div>
-          <div class="featured__item">
-            <a class="add__to__cart__link" href="#">
-              <div class="add__to__cart">
-                <img src="img/cart-w.png" alt="" />
-                <span>Add to Cart</span>
-              </div>
-            </a>
-            <a href="">
-              <img src="img/feat-1.png" alt="" class="featured__img" />
-            </a>
-            <span class="item__name"
-              ><a class="item__name__link" href=""
-                >Mango People T-shirt</a
-              ></span
-            >
-            <span class="item__price">$52.00</span>
-            <a class="add__to__cart__link" href="#">
-              <img src="img/cart-w.png" alt="" />
-              <span>Add to Cart</span>
-            </a>
-          </div>
-        </div>
-        <nav class="catalog__bottom">
-          <div class="catalog__bottom__counter">
-            <span class="catalog__nav__left"><a href=""></a></span>
-            <ul class="catalog__bottom__counter__list">
-              <li><a href="">1</a></li>
-              <li><a href="">2</a></li>
-              <li><a href="">3</a></li>
-              <li><a href="">4</a></li>
-              <li><a href="">5</a></li>
-              <li><a href="">6</a></li>
-              ......
-              <li><a href="">20</a></li>
-            </ul>
-            <span class="catalog__nav__right"><a href=""></a></span>
-          </div>
-          <a href="#" class="catalog__bottom__button">View All</a>
-        </nav>
-      </section>
+    <div class="item__slider">
+      <div class="item__pag__left"><a href="#"></a></div>
+      <div class="item__img_wrapper">
+        <img src="img/item-main-img.png" alt="" />
+      </div>
+      <div class="item__pag__right"><a href="#"></a></div>
     </div>
-    <div class="advantages center">
-      <article class="advantages__right__block">
-        <div class="offer__icon">
-          <img src="img/offer-icon.png" />
+    <section class="item__main__info center">
+      <div class="main__content__wrapper">
+        <div class="item__collection__name">
+          WOMEN COLLECTION
+          <div class="red__rectangle"></div>
         </div>
-        <div class="offer__right__text__wrapper">
-          <span class="advantages__right__title">Free Delivery</span>
-          <span class="advantages__right__text"
-            >Worldwide delivery on all. Authorit tively morph next-generation
-            innov tion with extensive models.</span
-          >
+
+        <div class="item__title">Moschino Cheap And Chic</div>
+        <div class="span__item__text">
+          Compellingly actualize fully researched processes before proactive
+          outsourcing. Progressively syndicate collaborative architectures
+          before cutting-edge services. Completely visualize parallel core
+          competencies rather than exceptional portals.
         </div>
-      </article>
-      <article class="advantages__right__block">
-        <div class="offer__icon"><img src="img/offer-icon-2.png" /></div>
-        <div class="offer__right__text__wrapper">
-          <span class="advantages__right__title">Sales & discounts</span>
-          <span class="advantages__right__text"
-            >Worldwide delivery on all. Authorit tively morph next-generation
-            innov tion with extensive models.</span
-          >
+        <div class="item__specs">
+          <span class="item__material">MATERIAL: <span>COTTON</span></span>
+          <span class="item__designer">DESIGNER: <span>BINBURHAN</span></span>
         </div>
-      </article>
-      <article class="advantages__right__block">
-        <div class="offer__icon"><img src="img/offer-icon-3.png" /></div>
-        <div class="offer__right__text__wrapper">
-          <span class="advantages__right__title">Quality assurance</span>
-          <span class="advantages__right__text"
-            >Worldwide delivery on all. Authorit tively morph next-generation
-            innov tion with extensive models.</span
-          >
+        <div class="item__price__main">$561</div>
+        <div class="item__filter">
+          <div class="choose__color choose">
+            <span>CHOOSE COLOR</span>
+            <select name="color" id="color" class="choose__color__selector">
+              <option value="red">Red</option>
+              <option value="Green">Green</option>
+            </select>
+          </div>
+          <div class="choose__size choose">
+            <span>CHOOSE SIZE</span>
+            <select name="size" id="size" class="choose__size__selector">
+              <option value="xxl">XXL</option>
+              <option value="XL">XL</option>
+            </select>
+          </div>
+          <div class="quantity choose">
+            <span>QUANTITY</span>
+            <input
+              placeholder="2"
+              name="quantity"
+              id="quantity"
+              class="choose__quantity__selector"
+            />
+          </div>
         </div>
-      </article>
+        <a class="item__add__button" href="#">
+          <img src="img/cart-r.png" alt="" />
+          <span>Add to Cart</span>
+        </a>
+      </div>
+    </section>
+    <div class="catalog center">
+      <section class="featured">
+        <h2 class="single__item__item__title">you may like also</h2>
+        <div
+          class="featured__items__container catalog__items__container single__item__item"
+        >
+          <div class="featured__item">
+            <a class="add__to__cart__link" href="#">
+              <div class="add__to__cart">
+                <img src="img/cart-w.png" alt="" />
+                <span>Add to Cart</span>
+              </div>
+            </a>
+            <a href="">
+              <img src="img/feat-1.png" alt="" class="featured__img" />
+            </a>
+            <span class="item__name"
+              ><a class="item__name__link" href=""
+                >Mango People T-shirt</a
+              ></span
+            >
+            <span class="item__price">$52.00</span>
+            <a class="add__to__cart__link" href="#">
+              <img src="img/cart-w.png" alt="" />
+              <span>Add to Cart</span>
+            </a>
+          </div>
+          <div class="featured__item">
+            <a class="add__to__cart__link" href="#">
+              <div class="add__to__cart">
+                <img src="img/cart-w.png" alt="" />
+                <span>Add to Cart</span>
+              </div>
+            </a>
+            <a href="">
+              <img src="img/feat-1.png" alt="" class="featured__img" />
+            </a>
+            <span class="item__name"
+              ><a class="item__name__link" href=""
+                >Mango People T-shirt</a
+              ></span
+            >
+            <span class="item__price">$52.00</span>
+            <a class="add__to__cart__link" href="#">
+              <img src="img/cart-w.png" alt="" />
+              <span>Add to Cart</span>
+            </a>
+          </div>
+          <div class="featured__item">
+            <a class="add__to__cart__link" href="#">
+              <div class="add__to__cart">
+                <img src="img/cart-w.png" alt="" />
+                <span>Add to Cart</span>
+              </div>
+            </a>
+            <a href="">
+              <img src="img/feat-1.png" alt="" class="featured__img" />
+            </a>
+            <span class="item__name"
+              ><a class="item__name__link" href=""
+                >Mango People T-shirt</a
+              ></span
+            >
+            <span class="item__price">$52.00</span>
+            <a class="add__to__cart__link" href="#">
+              <img src="img/cart-w.png" alt="" />
+              <span>Add to Cart</span>
+            </a>
+          </div>
+          <div class="featured__item">
+            <a class="add__to__cart__link" href="#">
+              <div class="add__to__cart">
+                <img src="img/cart-w.png" alt="" />
+                <span>Add to Cart</span>
+              </div>
+            </a>
+            <a href="">
+              <img src="img/feat-1.png" alt="" class="featured__img" />
+            </a>
+            <span class="item__name"
+              ><a class="item__name__link" href=""
+                >Mango People T-shirt</a
+              ></span
+            >
+            <span class="item__price">$52.00</span>
+            <a class="add__to__cart__link" href="#">
+              <img src="img/cart-w.png" alt="" />
+              <span>Add to Cart</span>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
     <div class="subscribe center">
       <blockquote class="quote">
