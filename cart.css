@@ -6,11 +6,27 @@
 .cart__content {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .cart__content__headings {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+}
+
+.cart__content__headings li:first-child {
+  margin-right: 300px;
+}
+
+.cart__content__headings__heading {
+  font-family: 'Lato';
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
+  letter-spacing: -0.01em;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .cart__content__item {
