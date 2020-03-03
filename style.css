@@ -1441,8 +1441,8 @@ a {
   margin-right: 44px;
 }
 
-.item__material span span,
-.item__designer span span {
+.item__material span,
+.item__designer span {
   font-family: "Lato";
   font-size: 14px;
   font-weight: bold;
