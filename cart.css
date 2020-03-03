@@ -13,6 +13,9 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 30px;
 }
 
 .cart__content__headings li:first-child {
