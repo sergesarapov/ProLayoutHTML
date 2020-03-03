@@ -1,0 +1,23 @@
+.cart {
+  display: flex;
+  justify-content: center;
+}
+
+.cart__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__content__headings {
+  list-style: none;
+  display: flex;
+}
+
+.cart__content__item {
+  display: flex;
+}
+
+.cart__content__item__text {
+  display: flex;
+  flex-direction: column;
+}
