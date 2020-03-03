@@ -176,6 +176,64 @@ a
 .header__right .button:hover
   background-color: rgba(241, 109, 127, 0.6)
 
+// MY ACCOUNT UNDER CONSTRUCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.header__right .header__right__my-account
+  text-transform: inherit
+  margin: 0
+  outline: none
+  cursor: pointer
+  height: 38px
+  width: 130px
+  background-color: $colorPink
+  font-size: 15px
+  color: rgba(255, 255, 255, 1)
+  display: flex
+
+
+.header__right__my-account__summary
+  display: flex
+  justify-content: space-around
+  align-items: center
+  outline: none
+  align-self: center
+  margin-top: 7px
+
+
+.header__right__my-account__summary::-webkit-details-marker
+  display: none
+
+.header__right__my-account__summary::after
+  content: ""
+  font-family: "FontAwesome"
+  padding-left: 0.5em
+  color: rgba(255, 255, 255, 1)
+
+.header__right__my-account[open] > .header__right__my-account__summary::after
+  content: ""
+  font-family: "FontAwesome"
+
+.header__right__my-account
+  position: relative
+
+.header__right__my-account[open] .header__right__my-account__drop
+  display: flex
+  top: 45px
+  left: -60px
+  // z-index: 1
+
+.header__right__my-account__drop
+  position: absolute
+  display: flex
+  height: 440px
+  width: 262px
+  background-color: rgba(255, 255, 255, 1)
+  border-radius: 5px
+
+  color: red
+  align-items: center
+  justify-content: center
+
+
 .logo
   display: flex
   align-items: center
@@ -755,33 +813,34 @@ a
   margin-top: 90px
   width: 243px
   margin-right: 60px
+.category__group
 
-summary
-  display: flex
-  justify-content: space-between
-  align-items: center
-  outline: none
-  height: 37px
-  margin-bottom: 18px
-  border-bottom: 1px solid rgba(235, 235, 235, 1)
-  border-left: 5px solid $colorPink
-  padding-left: 11px
-  font-size: 14px
-  font-weight: bold
-  color: $colorPink
-  line-height: 20px
-  text-transform: uppercase
-  cursor: pointer
+  summary
+    display: flex
+    justify-content: space-between
+    align-items: center
+    outline: none
+    height: 37px
+    margin-bottom: 18px
+    border-bottom: 1px solid rgba(235, 235, 235, 1)
+    border-left: 5px solid $colorPink
+    padding-left: 11px
+    font-size: 14px
+    font-weight: bold
+    color: $colorPink
+    line-height: 20px
+    text-transform: uppercase
+    cursor: pointer
 
-summary::-webkit-details-marker
-  display: none
+  summary::-webkit-details-marker
+    display: none
 
-summary::after
-  content: "\25B6"
-  padding-left: 0.5em
+  summary::after
+    content: "\25B6"
+    padding-left: 0.5em
 
-details[open] > summary::after
-  content: "\25BC"
+  details[open] > summary::after
+    content: "\25BC"
 
 .category__group li
   list-style: none
@@ -1341,3 +1400,268 @@ details[open] > summary::after
     line-height: 20px
     text-transform: uppercase
     margin-bottom: 60px
+
+// CART PAGE*********************************************************************
+// *****************************************************************************
+.cart
+  display: flex
+  justify-content: center
+
+  &__content
+    display: flex
+    flex-direction: column
+    width: 100%
+    margin-top: 90px
+
+    &__headings
+      list-style: none
+      display: flex
+      justify-content: space-between
+      padding-bottom: 20px
+      border-bottom: 1px solid rgba(234, 234, 234, 1)
+
+
+      li:first-child
+        margin-right: 320px
+
+      &__heading
+        font-family: 'Lato'
+        font-size: 13px
+        font-weight: bold
+        color: rgba(34, 34, 34, 1)
+        letter-spacing: -0.01em
+        text-transform: uppercase
+
+    &__item
+      display: flex
+      align-items: center
+      padding-bottom: 25px
+      border-bottom: 1px solid rgba(234, 234, 234, 1)
+      margin-top: 30px
+
+      img
+        margin-right: 21px
+      img:hover
+        filter: brightness(90%)
+
+      &__text
+        display: flex
+        flex-direction: column
+
+        &__title
+          font-family: 'Lato'
+          font-size: 13px
+          color: rgba(34, 34, 34, 1)
+          text-align: right
+          text-transform: uppercase
+          margin-bottom: 38px
+
+          a:hover
+            color: $colorPink
+
+        &__color
+          font-family: 'Lato'
+          font-size: 13px
+          color: rgba(87, 87, 87, 1)
+          line-height: 20px
+
+          span
+            font-weight: 300
+            color: rgba(111, 110, 110, 1)
+            margin-left: 5px
+
+        &__size
+          @extend .cart__content__item__text__color
+
+      &__price
+        font-family: 'Lato'
+        font-size: 13px
+        color: rgba(101, 101, 101, 1)
+        line-height: 20px
+        margin-left: 255px
+
+      &__quantity
+        height: 30px
+        width: 54px
+        font-family: 'Lato'
+        font-size: 13px
+        color: rgba(101, 101, 101, 1)
+        line-height: 20px
+        text-align: center
+        margin-left: 110px
+
+      &__shipping
+        font-family: 'Lato'
+        font-size: 13px
+        color: rgba(101, 101, 101, 1)
+        line-height: 20px
+        margin-left: 90px
+
+      &__subtotal
+        font-family: 'Lato'
+        font-size: 13px
+        color: rgba(101, 101, 101, 1)
+        line-height: 20px
+        margin-left: 120px
+
+      &__action
+        font-family: 'FontAwesome'
+        font-size: 16px
+        color: rgba(192, 192, 192, 1)
+        text-align: right
+        text-transform: uppercase
+        margin-left: 110px
+
+    &__buttons
+      display: flex
+      justify-content: space-between
+      margin-top: 44px
+      margin-bottom: 63px
+
+      &__button
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 50px
+        width: 235px
+        font-family: 'Lato'
+        font-size: 14px
+        font-weight: bold
+        color: rgba(74, 74, 74, 1)
+        text-transform: uppercase
+        border: 1px solid rgba(234, 234, 234, 1)
+
+      a:hover
+        background-color: $colorPink
+        color: white
+
+.cart__content__inputs
+  display: flex
+  margin-bottom: 80px
+
+  &__adress
+    display: flex
+    flex-direction: column
+
+    &__title
+      font-family: 'Lato'
+      font-size: 16px
+      font-weight: bold
+      color: rgba(34, 34, 34, 1)
+      text-transform: uppercase
+      margin-bottom: 20px
+
+    select
+      display: flex
+      height: 45px
+      width: 355px
+      font-family: 'Lato'
+      font-size: 13px
+      font-weight: 300
+      color: rgba(177, 177, 177, 1)
+      padding-left: 10px
+      outline: none
+      margin-bottom: 20px
+
+      option
+        font-size: 25px
+
+    .state
+      display: flex
+      height: 45px
+      width: 335px
+      font-family: 'Lato'
+      font-size: 13px
+      font-weight: 300
+      color: rgba(177, 177, 177, 1)
+      padding-left: 15px
+      outline: none
+      margin-bottom: 20px
+
+    .postcode
+      display: flex
+      height: 45px
+      width: 335px
+      font-family: 'Lato'
+      font-size: 13px
+      font-weight: 300
+      color: rgba(177, 177, 177, 1)
+      padding-left: 15px
+      outline: none
+      margin-bottom: 20px
+
+    &__button
+      height: 35px
+      width: 100px
+      font-family: 'Lato'
+      font-size: 11px
+      font-weight: bold
+      color: rgba(74, 74, 74, 1)
+      text-transform: uppercase
+      background-color: rgba(255, 255, 255, 1)
+      border: 1px solid rgba(234, 234, 234, 1)
+      cursor: pointer
+      outline: none
+
+    button:hover
+      background-color: $colorPink
+      color: white
+
+.cart__content__inputs__coupon
+  @extend .cart__content__inputs__adress
+  margin-left: 36px
+
+  &__title
+    @extend .cart__content__inputs__adress__title
+
+  &__lead
+    font-family: 'Lato'
+    font-size: 14px
+    font-weight: 300
+    color: rgba(0, 0, 0, 1)
+    margin-bottom: 20px
+
+.cart__content__inputs__checkout
+  @extend .cart__content__inputs__coupon
+  height: 214px - 80px
+  width: 360px - 80px
+  background-color: rgba(245, 243, 243, 1)
+  align-items: flex-end
+  padding: 40px
+
+  &__sub-total
+    font-family: 'Lato'
+    font-size: 11px
+    color: rgba(74, 74, 74, 1)
+    text-transform: uppercase
+    margin-bottom: 20px
+
+    span
+      margin-left: 20px
+
+  &__grand-total
+    font-family: 'Lato'
+    font-size: 16px
+    font-weight: bold
+    color: rgba(34, 34, 34, 1)
+    text-transform: uppercase
+    padding-bottom: 20px
+    border-bottom: 1px solid rgba(226, 226, 226, 1)
+    text-align: right
+    width: 235px
+
+    span
+      font-weight: bold
+      color: $colorPink
+      margin-left: 20px
+
+  button
+    @extend .cart__content__buttons__button
+    color: rgba(255, 255, 255, 1)
+    background-color: $colorPink
+    margin-top: 20px
+    cursor: pointer
+
+  button:hover
+    color: black
+    background-color: white
