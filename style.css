@@ -1746,10 +1746,11 @@ a {
   font-family: 'Lato';
   font-size: 13px;
   font-weight: 300;
-  color: #b1b1b1;
+  color: #222222;
   padding-left: 10px;
   outline: none;
   margin-bottom: 20px;
+  background-color: white;
 }
 
 .cart__content__inputs__adress select option, .cart__content__inputs__coupon select option, .cart__content__inputs__checkout select option {
