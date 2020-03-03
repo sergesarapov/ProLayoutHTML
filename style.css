@@ -223,6 +223,7 @@ a {
   outline: none;
   align-self: center;
   margin-top: 7px;
+  padding-bottom: 9px;
 }
 
 .header__right__my-account__summary::-webkit-details-marker {
