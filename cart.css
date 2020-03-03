@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 90px;
 }
 
 .cart__content__headings {
@@ -39,4 +40,24 @@
 .cart__content__item__text {
   display: flex;
   flex-direction: column;
+}
+
+.cart__content__item__text__title {
+  font-family: 'Lato';
+  font-size: 13px;
+  color: #222222;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.cart__content__item__text__color, .cart__content__item__text__size {
+  font-family: 'Lato';
+  font-size: 13px;
+  color: #575757;
+  line-height: 20px;
+}
+
+.cart__content__item__text__color span, .cart__content__item__text__size span {
+  font-weight: 300;
+  color: #6f6e6e;
 }
