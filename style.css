@@ -1344,8 +1344,8 @@ a {
   align-items: center;
 }
 
-.item__pag__left a a,
-.item__pag__right a a {
+.item__pag__left a,
+.item__pag__right a {
   font-family: "FontAwesome";
   font-size: -24px;
   color: white;
@@ -1353,8 +1353,8 @@ a {
   padding: 10px;
 }
 
-.item__pag__left a:hover a:hover,
-.item__pag__right a:hover a:hover {
+.item__pag__left a:hover,
+.item__pag__right a:hover {
   color: #f16d7f;
 }
 
