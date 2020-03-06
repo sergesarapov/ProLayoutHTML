@@ -153,6 +153,9 @@ a
 
 .header__cart
   margin-right: 26px
+  transition: 0.5s
+  &:hover
+    transform: rotate(-10deg) translateX(5px)
 
 .header__right .button
   display: flex
@@ -227,10 +230,92 @@ a
   width: 262px
   background-color: rgba(255, 255, 255, 1)
   border-radius: 5px
-
   color: red
-  align-items: center
-  justify-content: center
+  flex-direction: column
+  z-index: 1
+
+.drop__item
+  display: flex
+  margin: 20px 20px 0px 20px
+  padding-bottom: 16px
+  border-bottom: 1px solid rgba(237, 237, 237, 0.75)
+  &__text
+    display: flex
+    flex-direction: column
+    margin-left: 14px
+    margin-right: 55px
+    h3
+      font-family: 'Lato'
+      font-size: 12px
+      font-weight: bold
+      color: rgba(34, 34, 34, 1)
+      text-transform: uppercase
+      margin-bottom: 10px
+    .stars
+      font-family: 'FontAwesome'
+      font-size: 12px
+      color: rgba(228, 175, 72, 1)
+      text-transform: uppercase
+      margin-bottom: 10px
+    .amount
+      font-family: 'Lato'
+      font-size: 12px
+      color: rgba(241, 109, 127, 1)
+      text-transform: uppercase
+
+  .delete
+    font-family: 'FontAwesome'
+    font-size: 16px
+    color: rgba(192, 192, 192, 1)
+    text-align: right
+    text-transform: uppercase
+    align-self: center
+    transition: 0.5s
+    &:hover
+      transform: rotate(180deg)
+
+.drop__total
+  display: flex
+  justify-content: space-between
+  padding: 19px 18px
+  font-family: 'Lato'
+  font-size: 16px
+  font-weight: bold
+  color: rgba(34, 34, 34, 1)
+  text-transform: uppercase
+
+.checkout-button
+  height: 50px
+  width: 225px
+  border: 1px solid $colorPink
+  background-color: rgba(255, 255, 255, 1)
+  font-family: 'Lato'
+  font-size: 14px
+  font-weight: bold
+  color: $colorPink
+  text-transform: uppercase
+  align-self: center
+  cursor: pointer
+
+.checkout-button:hover
+  background-color: $colorPink
+  color: white
+
+.b
+  border: 1px solid rgba(234, 234, 234, 1)
+  font-family: 'Lato'
+  font-size: 14px
+  font-weight: bold
+  color: rgba(74, 74, 74, 1)
+  text-transform: uppercase
+  margin-top: 11px
+.b:hover
+
+
+
+
+
+
 
 .logo
   display: flex
@@ -388,6 +473,7 @@ a
     margin-right: 23px
     margin-bottom: 60px
     position: relative
+    transition: all 0.3s
 
     &:hover .add__to__cart__link
       display: flex
@@ -397,6 +483,7 @@ a
 
     &:hover
       box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+      transform: scale(1.05)
 
   &__img
     width: 261px
@@ -1509,6 +1596,9 @@ details[open] > summary::after
         text-align: right
         text-transform: uppercase
         margin-left: 110px
+        transition: all 0.5s
+      &__action:hover
+        transform: rotate(180deg)
 
     &__buttons
       display: flex
@@ -1664,3 +1754,143 @@ details[open] > summary::after
   button:hover
     color: black
     background-color: white
+
+// CHECKOUT PAGE*****************************************************************
+// ******************************************************************************
+
+.checkout
+  display: flex
+  flex-direction: column
+  margin: 89px 0px
+
+.checkout__list
+  list-style: none
+
+.li-title
+  font-family: 'Lato'
+  font-size: 16px
+  font-weight: bold
+  color: rgba(34, 34, 34, 1)
+  text-transform: uppercase
+
+.shipping-adress
+  display: flex
+  flex-direction: column
+  padding-bottom: 89px
+  border-bottom: 1px solid rgba(234, 234, 234, 1)
+
+  .li-first-child
+    font-family: 'Lato'
+    font-size: 16px
+    font-weight: bold
+    color: rgba(34, 34, 34, 1)
+    text-transform: uppercase
+    margin-bottom: 39px
+
+  &__content
+    display: flex
+    margin-left: 34px
+    justify-content: space-between
+
+.check-as-guest
+  display: flex
+  flex-direction: column
+
+  .h3-register
+    margin-top: 13px
+
+  h3
+    font-family: 'Lato'
+    font-size: 13px
+    color: rgba(34, 34, 34, 1)
+    text-transform: uppercase
+    margin-bottom: 15px
+
+  .reg-lead
+    font-family: 'Lato'
+    font-size: 13px
+    color: rgba(179, 178, 178, 1)
+    line-height: 20px
+    text-transform: none
+    margin-bottom: 33px
+
+  p
+    font-family: 'Lato'
+    font-size: 12px
+    color: rgba(34, 34, 34, 1)
+    text-transform: uppercase
+    margin-bottom: 20px
+    display: flex
+    align-items: center
+
+    input
+      margin-right: 5px
+
+.checkout-advantages
+  font-family: 'Lato'
+  font-size: 13px
+  color: rgba(179, 178, 178, 1)
+  line-height: 20px
+  margin-bottom: 10px
+  span
+    font-family: 'FontAwesome'
+    font-size: 13px
+    color: rgba(179, 178, 178, 1)
+    line-height: 20px
+    margin-right: 5px
+
+.continue-button
+  height: 50px
+  width: 180px
+  margin-top: 38px
+
+.shipping-adress__right
+  margin-right: 150px
+  form
+    display: flex
+    flex-direction: column
+    h3
+      font-family: 'Lato'
+      font-size: 13px
+      color: rgba(34, 34, 34, 1)
+      text-transform: uppercase
+      margin-bottom: 15px
+    span
+      font-family: 'Lato'
+      font-size: 13px
+      color: rgba(179, 178, 178, 1)
+      line-height: 20px
+      margin-bottom: 27px
+    h4
+      font-family: 'Lato'
+      font-size: 12px
+      color: rgba(34, 34, 34, 1)
+      line-height: 20px
+      margin-bottom: 16px
+    input
+      height: 45px
+      width: 390px
+      background-color: rgba(255, 255, 255, 1)
+      border: 1px solid rgba(234, 234, 234, 1)
+      margin-bottom: 23px
+      padding: 0px 20px
+    .required-span
+      font-family: 'Lato'
+      font-size: 13px
+      color: rgba(255, 13, 13, 1)
+      line-height: 20px
+    button
+      margin-right: 32px
+    .login-button
+      margin-top: 15px
+    .forgot-span
+      font-family: 'Lato'
+      font-size: 14px
+      color: rgba(34, 34, 34, 1)
+      line-height: 20px
+      &:hover
+        color: $colorPink
+
+.checkout__list__item-closed
+  padding: 34px 0px
+  border-bottom: 1px solid rgba(234, 234, 234, 1)

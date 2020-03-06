@@ -54,9 +54,38 @@
           <img class="header__cart" src="img/cart.png" alt="cart"
         /></a>
         <details class="header__right__my-account">
-          <summary class="header__right__my-account__summary">My Account</summary>
+          <summary class="header__right__my-account__summary"
+            >My Account</summary
+          >
           <div class="header__right__my-account__drop">
-            <span>!!UNDER CONSTRUCTION!!</span>
+            <div class="drop__item">
+              <a href="item.html"><img src="img/cart-preview.png" alt=""/></a>
+              <div class="drop__item__text">
+                <h3>Rebox&nbspZane</h3>
+                <span class="stars"></span>
+                <span class="amount">1 x $250</span>
+              </div>
+              <span class="delete"></span>
+            </div>
+            <div class="drop__item">
+              <a href="item.html"><img src="img/cart-preview.png" alt=""/></a>
+              <div class="drop__item__text">
+                <h3>Rebox&nbspZane</h3>
+                <span class="stars"></span>
+                <span class="amount">1 x $250</span>
+              </div>
+              <span class="delete"></span>
+            </div>
+            <span class="drop__total">
+              <h3>TOTAL</h3>
+              <h3>$500</h3>
+            </span>
+            <button
+              class="checkout-button"
+              onclick="window.location.href='checkout.html'"
+            >
+              Checkout</button
+            ><button class="checkout-button b">Go to cart</button>
           </div>
         </details>
       </div>
@@ -118,16 +147,84 @@
         <li><a href="#">new arrivals</a></li>
       </ul>
     </div>
-<div class="checkout center">
-  <ol class="checkout__list">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ol>
-</div>
+    <div class="checkout center">
+      <ul class="checkout__list">
+        <li class="shipping-adress">
+          <span class="li-first-child">01. Shipping Adress</span>
+          <div class="shipping-adress__content">
+            <div class="shipping-adress__left">
+              <form action="" class="check-as-guest">
+                <h3>Check as a guest or register</h3>
+                <span class="reg-lead"
+                  >Register with us for future convenience</span
+                >
+                <p>
+                  <input name="register" type="radio" /><span
+                    class="radio-heading"
+                    >checkout as guest</span
+                  >
+                </p>
+                <p>
+                  <input name="register" type="radio" /><span
+                    class="radio-heading"
+                    >register</span
+                  >
+                </p>
+                <h3 class="h3-register">register and save time!</h3>
+                <span class="reg-lead"
+                  >Register with us for future convenience</span
+                >
+                <span class="checkout-advantages"
+                  ><span></span>Fast and easy checkout</span
+                >
+                <span class="checkout-advantages"
+                  ><span></span>Easy access to your order history and
+                  status</span
+                >
+                <button class="continue-button checkout-button b" type="submit">
+                  continue
+                </button>
+              </form>
+            </div>
+            <div class="shipping-adress__right">
+              <form action="">
+                <h3>Already registed?</h3>
+                <span>Please log in below</span>
+                <h4>EMAIL ADDRESS <span class="required-span">*</span></h4>
+                <input type="email" required />
+                <h4>PASSWORD <span class="required-span">*</span></h4>
+                <input type="password" required />
+                <span class="required-span">* Required Fields</span>
+                <div class="sign-in__submit">
+                  <button
+                    class=" login-button continue-button checkout-button b"
+                  >
+                    LOG IN</button
+                  ><span class="forgot-span"
+                    ><a href="#">Forgot Password ?</a></span
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </li>
+        <li class="checkout__list__item-closed">
+          <span class="li-title">02. BILLING INFORMATION</span>
+        </li>
+        <li class="checkout__list__item-closed">
+          <span class="li-title">03. SHIPPING INFORMATION</span>
+        </li>
+        <li class="checkout__list__item-closed">
+          <span class="li-title">04. SHIPPING METHOD</span>
+        </li>
+        <li class="checkout__list__item-closed">
+          <span class="li-title">05. PAYMENT METHOD</span>
+        </li>
+        <li class="checkout__list__item-closed">
+          <span class="li-title">06. ORDER REVIEW</span>
+        </li>
+      </ul>
+    </div>
 
     <div class="subscribe center">
       <blockquote class="quote">
