@@ -769,7 +769,7 @@ a {
 }
 
 .down__menu__list ul li {
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   list-style: none;
   font-size: 16px;
   color: #898989;
@@ -937,7 +937,7 @@ a {
   padding-left: 0.5em;
 }
 
-.category__group details[open] > summary::after {
+details[open] > summary::after {
   content: "\25BC";
 }
 
@@ -1545,7 +1545,7 @@ a {
 }
 
 .item__add__button:hover {
-  background-color: rgba(239, 91, 112, 0.6);
+  background-color: #f16d7f;
   color: white;
 }
 
