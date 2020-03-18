@@ -155,8 +155,11 @@ a
 .header__cart
   margin-right: 26px
   transition: 0.5s
-  &:hover
-    transform: rotate(-10deg) translateX(5px)
+  // &:hover
+  //   transform: rotate(-10deg) translateX(5px)
+
+.header__right
+  position: relative
 
 .header__right .button
   display: flex
@@ -170,6 +173,7 @@ a
   text-align: right
   letter-spacing: 0.03em
   line-height: 32px
+  transition: all 0.4s
 
 .header__right .button span
   font-family: "FontAwesome"
@@ -178,9 +182,17 @@ a
   text-align: right
 
 .header__right .button:hover
-  background-color: rgba(241, 109, 127, 0.6)
+  background-color: white
+  border: 1px solid $colorPink
+  color: $colorPink
+  transition: all 0.4s
+.header__right .button:hover span
+  color: $colorPink
+  transition: all 0.4s
+
 
 // MY ACCOUNT UNDER CONSTRUCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 .header__right .header__right__my-account
   text-transform: inherit
   margin: 0
@@ -193,40 +205,12 @@ a
   color: rgba(255, 255, 255, 1)
   display: flex
 
-.header__right__my-account__summary
-  display: flex
-  justify-content: space-around
-  align-items: center
-  outline: none
-  align-self: center
-  margin-top: 7px
-  padding-bottom: 9px
-
-.header__right__my-account__summary::-webkit-details-marker
-  display: none
-
-.header__right__my-account__summary::after
-  content: ""
-  font-family: "FontAwesome"
-  padding-left: 0.5em
-  color: rgba(255, 255, 255, 1)
-
-.header__right__my-account[open] > .header__right__my-account__summary::after
-  content: ""
-  font-family: "FontAwesome"
-
 .header__right__my-account
   position: relative
 
-.header__right__my-account[open] .header__right__my-account__drop
-  display: flex
-  top: 45px
-  left: -60px
-  // z-index: 1
-
 .header__right__my-account__drop
   position: absolute
-  display: flex
+  display: none
   height: 440px
   width: 262px
   background-color: rgba(255, 255, 255, 1)
@@ -234,6 +218,15 @@ a
   color: red
   flex-direction: column
   z-index: 1
+  top: 37px + 20px
+  right: 40px
+
+.header__right__cart-wrapper
+  display: flex
+  padding: 20px 0 20px 0
+
+.header__right__cart-wrapper:hover .header__right__my-account__drop
+  display: flex
 
 .drop__item
   display: flex
@@ -272,6 +265,7 @@ a
     text-transform: uppercase
     align-self: center
     transition: 0.5s
+    cursor: pointer
     &:hover
       transform: rotate(180deg)
 
@@ -310,13 +304,6 @@ a
   color: rgba(74, 74, 74, 1)
   text-transform: uppercase
   margin-top: 11px
-.b:hover
-
-
-
-
-
-
 
 .logo
   display: flex
@@ -707,7 +694,9 @@ a
     cursor: pointer
 
   &__button:hover
-    background-color: rgba(241, 109, 127, 0.6)
+    background-color: #e1e1e1
+    border: 1px solid rgba($colorPink, .3)
+    color: $colorPink
 
 
 .quote
@@ -1219,8 +1208,8 @@ details[open] > summary::after
     border-radius: 3px
 
   &__button:hover
-    background-color: rgba(239, 91, 112, 0.6)
-    color: black
+    background-color: $colorPink
+    color: white
 
 .catalog__nav__left a
   font-family: "FontAwesome"
@@ -1451,6 +1440,10 @@ details[open] > summary::after
     appearance: none
     background: url("img/2565.png") 90% / 10% no-repeat
 
+.hover-cart
+  display: none
+  width: 26px
+  height: 24px
 .item__add__button
   height: 55px
   width: 537px
@@ -1468,9 +1461,16 @@ details[open] > summary::after
   &:hover
     background-color: $colorPink
     color: white
+  &:hover .hover-cart
+    display: flex
+  &:hover .default-cart
+    display: none
+
 
   img
     margin-right: 15px
+
+
 
 /* YOU MAY ALSO LIKE********************************************************** */
 .single__item__item

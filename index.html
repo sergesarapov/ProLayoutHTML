@@ -46,27 +46,24 @@
         </form>
       </div>
       <div class="header__right">
-        <a href="cart.html">
-          <img class="header__cart" src="img/cart.png" alt="cart"
-        /></a>
-        <details class="header__right__my-account">
-          <summary class="header__right__my-account__summary"
-            >My Account</summary
-          >
+        <div class="header__right__cart-wrapper">
+          <a class="cart-link" href="cart.html">
+            <img class="header__cart" src="img/cart.png" alt="cart" />
+          </a>
           <div class="header__right__my-account__drop">
             <div class="drop__item">
-              <a href="item.html"><img src="img/cart-preview.png" alt=""></a>
+              <a href="item.html"><img src="img/cart-preview.png" alt=""/></a>
               <div class="drop__item__text">
-                <h3>Rebox&nbspZane</h3>
+                <a href="item.html"><h3>Rebox&nbspZane</h3></a>
                 <span class="stars"></span>
                 <span class="amount">1 x $250</span>
               </div>
               <span class="delete"></span>
             </div>
             <div class="drop__item">
-              <a href="item.html"><img src="img/cart-preview.png" alt=""></a>
+              <a href="item.html"><img src="img/cart-preview.png" alt=""/></a>
               <div class="drop__item__text">
-                <h3>Rebox&nbspZane</h3>
+                <a href="item.html"><h3>Rebox&nbspZane</h3></a>
                 <span class="stars"></span>
                 <span class="amount">1 x $250</span>
               </div>
@@ -76,9 +73,17 @@
               <h3>TOTAL</h3>
               <h3>$500</h3>
             </span>
-            <button class="checkout-button" onclick="window.location.href='checkout.html'">Checkout</button><button class="checkout-button b">Go to cart</button>
+            <button
+              class="checkout-button"
+              onclick="window.location.href='checkout.html'"
+            >
+              Checkout</button
+            ><button class="checkout-button b">Go to cart</button>
           </div>
-        </details>
+        </div>
+        <div class="header__right__my-account">
+          <a href="" class="button">My Account<span></span></a>
+        </div>
       </div>
     </header>
     <nav class="nav center">

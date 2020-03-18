@@ -180,8 +180,8 @@ a {
   transition: 0.5s;
 }
 
-.header__cart:hover {
-  transform: rotate(-10deg) translateX(5px);
+.header__right {
+  position: relative;
 }
 
 .header__right .button {
@@ -196,6 +196,7 @@ a {
   text-align: right;
   letter-spacing: 0.03em;
   line-height: 32px;
+  transition: all 0.4s;
 }
 
 .header__right .button span {
@@ -206,7 +207,15 @@ a {
 }
 
 .header__right .button:hover {
-  background-color: rgba(241, 109, 127, 0.6);
+  background-color: white;
+  border: 1px solid #f16d7f;
+  color: #f16d7f;
+  transition: all 0.4s;
+}
+
+.header__right .button:hover span {
+  color: #f16d7f;
+  transition: all 0.4s;
 }
 
 .header__right .header__right__my-account {
@@ -222,45 +231,13 @@ a {
   display: flex;
 }
 
-.header__right__my-account__summary {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  outline: none;
-  align-self: center;
-  margin-top: 7px;
-  padding-bottom: 9px;
-}
-
-.header__right__my-account__summary::-webkit-details-marker {
-  display: none;
-}
-
-.header__right__my-account__summary::after {
-  content: "";
-  font-family: "FontAwesome";
-  padding-left: 0.5em;
-  color: white;
-}
-
-.header__right__my-account[open] > .header__right__my-account__summary::after {
-  content: "";
-  font-family: "FontAwesome";
-}
-
 .header__right__my-account {
   position: relative;
 }
 
-.header__right__my-account[open] .header__right__my-account__drop {
-  display: flex;
-  top: 45px;
-  left: -60px;
-}
-
 .header__right__my-account__drop {
   position: absolute;
-  display: flex;
+  display: none;
   height: 440px;
   width: 262px;
   background-color: white;
@@ -268,6 +245,17 @@ a {
   color: red;
   flex-direction: column;
   z-index: 1;
+  top: 57px;
+  right: 40px;
+}
+
+.header__right__cart-wrapper {
+  display: flex;
+  padding: 20px 0 20px 0;
+}
+
+.header__right__cart-wrapper:hover .header__right__my-account__drop {
+  display: flex;
 }
 
 .drop__item {
@@ -316,6 +304,7 @@ a {
   text-transform: uppercase;
   align-self: center;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .drop__item .delete:hover {
@@ -799,7 +788,9 @@ a {
 }
 
 .subscribe__button:hover {
-  background-color: rgba(241, 109, 127, 0.6);
+  background-color: #e1e1e1;
+  border: 1px solid rgba(241, 109, 127, 0.3);
+  color: #f16d7f;
 }
 
 .quote {
@@ -1369,8 +1360,8 @@ details[open] > summary::after {
 }
 
 .catalog__bottom__button:hover {
-  background-color: rgba(239, 91, 112, 0.6);
-  color: black;
+  background-color: #f16d7f;
+  color: white;
 }
 
 .catalog__nav__left a {
@@ -1628,6 +1619,12 @@ details[open] > summary::after {
   background: url("img/2565.png") 90%/10% no-repeat;
 }
 
+.hover-cart {
+  display: none;
+  width: 26px;
+  height: 24px;
+}
+
 .item__add__button {
   height: 55px;
   width: 537px;
@@ -1646,6 +1643,14 @@ details[open] > summary::after {
 .item__add__button:hover {
   background-color: #f16d7f;
   color: white;
+}
+
+.item__add__button:hover .hover-cart {
+  display: flex;
+}
+
+.item__add__button:hover .default-cart {
+  display: none;
 }
 
 .item__add__button img {
