@@ -265,6 +265,10 @@ a {
   border-bottom: 1px solid rgba(237, 237, 237, 0.75);
 }
 
+.drop__item img:hover {
+  filter: brightness(90%);
+}
+
 .drop__item__text {
   display: flex;
   flex-direction: column;
@@ -279,6 +283,10 @@ a {
   color: #222222;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.drop__item__text h3:hover {
+  color: #f16d7f;
 }
 
 .drop__item__text .stars {
@@ -630,7 +638,14 @@ a {
 }
 
 .featured__button:hover {
-  background-color: rgba(241, 109, 127, 0.6);
+  background-color: white;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+  margin: -1px 0;
+}
+
+.featured__button:hover span {
+  color: #f16d7f;
 }
 
 /* OFFER*********************************************************************** */
@@ -1869,12 +1884,12 @@ details[open] > summary::after {
 .cart__content__inputs__adress .state, .cart__content__inputs__coupon .state, .cart__content__inputs__checkout .state {
   display: flex;
   height: 45px;
-  width: 335px;
+  width: 335px -15px;
   font-family: 'Lato';
   font-size: 13px;
   font-weight: 300;
   color: #b1b1b1;
-  padding-left: 15px;
+  padding: 0 15px;
   outline: none;
   margin-bottom: 20px;
 }

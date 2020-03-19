@@ -233,6 +233,8 @@ a
   margin: 20px 20px 0px 20px
   padding-bottom: 16px
   border-bottom: 1px solid rgba(237, 237, 237, 0.75)
+  img:hover
+    filter: brightness(90%)
   &__text
     display: flex
     flex-direction: column
@@ -245,6 +247,9 @@ a
       color: rgba(34, 34, 34, 1)
       text-transform: uppercase
       margin-bottom: 10px
+      &:hover
+        color: $colorPink
+
     .stars
       font-family: 'FontAwesome'
       font-size: 12px
@@ -554,7 +559,12 @@ a
     margin-left: 9px
 
   &:hover
-    background-color: rgba(241, 109, 127, 0.6)
+    background-color: white
+    color: $colorPink
+    border: 1px solid $colorPink
+    margin: -1px 0
+  &:hover span
+    color: $colorPink
 
 /* OFFER*********************************************************************** */
 
@@ -1659,12 +1669,12 @@ details[open] > summary::after
     .state
       display: flex
       height: 45px
-      width: 335px
+      width: 335px -15px
       font-family: 'Lato'
       font-size: 13px
       font-weight: 300
       color: rgba(177, 177, 177, 1)
-      padding-left: 15px
+      padding: 0 15px
       outline: none
       margin-bottom: 20px
 
