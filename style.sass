@@ -463,7 +463,6 @@ a
     display: flex
     flex-direction: column
     align-items: baseline
-    margin-right: 23px
     margin-bottom: 60px
     position: relative
     transition: all 0.3s
@@ -480,6 +479,10 @@ a
 
   &__img
     width: 261px
+.mainpage__item
+  margin-right: (1140px - (261px * 4)) / 3
+  &:nth-child(4n)
+    margin-right: 0
 
 .items__section__title
   font-size: 30px
@@ -851,6 +854,11 @@ a
 
 .catalog__items__container
   width: 855px
+
+  .catalog__item
+    margin-right: (846px - (261px * 3)) / 2
+    &:nth-child(3n)
+      margin-right: 0
 
 
 /* BREADCRUMBS*************************************************************** */
@@ -1497,6 +1505,10 @@ details[open] > summary::after
     text-transform: uppercase
     margin-bottom: 60px
 
+.itempage__item
+  margin-right: (1140px - (261px * 4)) / 3
+  &:nth-child(4n)
+    margin-right: 0
 // CART PAGE*********************************************************************
 // *****************************************************************************
 .cart

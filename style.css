@@ -527,7 +527,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  margin-right: 23px;
   margin-bottom: 60px;
   position: relative;
   transition: all 0.3s;
@@ -548,6 +547,14 @@ a {
 
 .featured__img {
   width: 261px;
+}
+
+.mainpage__item {
+  margin-right: 32px;
+}
+
+.mainpage__item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .items__section__title {
@@ -964,6 +971,14 @@ a {
 
 .catalog__items__container {
   width: 855px;
+}
+
+.catalog__items__container .catalog__item {
+  margin-right: 31.5px;
+}
+
+.catalog__items__container .catalog__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* BREADCRUMBS*************************************************************** */
@@ -1687,6 +1702,14 @@ details[open] > summary::after {
   line-height: 20px;
   text-transform: uppercase;
   margin-bottom: 60px;
+}
+
+.itempage__item {
+  margin-right: 32px;
+}
+
+.itempage__item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .cart {
